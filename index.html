@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Число с изменением</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin-top: 50px;
+      }
+      .container {
+        width: 250px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+      input,
+      button,
+      select {
+        padding: 10px;
+        margin: 10px 0;
+        width: 100%;
+        border-radius: 5px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+      }
+      button {
+        background-color: #007bff;
+        color: white;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #0056b3;
+      }
+      .buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .buttons button {
+        width: 50px;
+        background-color: #28a745;
+        border-radius: 5px;
+        margin: 0 10px;
+      }
+      .buttons span {
+        font-size: 24px;
+        margin: 0 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <label for="numberInput">Enter your number:</label>
+      <input type="number" id="numberInput" placeholder="Введите число" />
+      <button id="sendButton">Send</button>
+
+      <div class="buttons">
+        <button id="decrementButton">-</button>
+        <span id="numberDisplay">0</span>
+        <button id="incrementButton">+</button>
+      </div>
+
+      <label for="colorInput">Select color:</label>
+      <input type="color" id="colorInput" />
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
